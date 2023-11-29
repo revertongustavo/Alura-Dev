@@ -1,0 +1,45 @@
+html{
+    background-color:#051D3B ;
+}
+
+.header_aluradev{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 7rem;
+    height: 2.4rem;
+}
+
+.campo_pesquisa{
+   display: none;
+}
+
+.icones_menu{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem 0 0;
+}
+
+.editor_texto{
+    display: flex;
+    margin: 2rem 0 0 0.7rem;
+    background-color: #6BD1FF;
+    width: 21rem;
+    height: 30rem;
+    border-radius: 0.6rem;
+}
+
+.campo_editor{
+    background-color: black;
+}
+
+.btn_editor{
+    padding: 1rem 0 0;
+}
+.codigo_editor{
+    color: white;
+    font-family: 'Roboto Mono';
+    padding: 0 2rem;
+}

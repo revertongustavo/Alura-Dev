@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+</head>
+<body>
+    <header class="header_aluradev">
+        <img src="./img/Logo-2.png"  alt="logo AluraDev" class="logo">
+        <input type="text" class="campo_pesquisa" houver="Busque por Algo">
+        <div class="icones_menu">
+            <i class="fa-solid fa-magnifying-glass icon_pesquisa" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-bars icon_menu" style="color: #ffffff;"></i>
+        </div>
+    </header>
+    <section class="editor_texto">
+        <div class="campo_editor">
+            <img class="btn_editor" src="./img/Ellipse 1.png"></img>
+            <img class="btn_editor" src="./img/Ellipse 2.png"></img>
+            <img class="btn_editor" src="./img/Ellipse 3.png"></img>
+            <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                
+                const unfold = (f, seed) => {
+                  const go = (f, seed, acc) => {
+                    const res = f(seed)
+                    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                  }
+                  return go(f, seed, [])
+                }</p>
+        </div>
+    </section>
+</body>
+</html>
