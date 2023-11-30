@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
-    
-    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
@@ -20,42 +19,47 @@
             <i class="fa-solid fa-bars icon_menu" style="color: #ffffff;"></i>
         </div>
     </header>
-    <section class="editor_texto">
-        <div class="campo_editor">
-            <div class="btn_todos">
-                <img class="btn_editor" src="./img/Ellipse 1.png"></img>
-                <img class="btn_editor" src="./img/Ellipse 2.png"></img>
-                <img class="btn_editor" src="./img/Ellipse 3.png"></img>
-            </div>
-            <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+    <section class="section_editor">
+        <div class="editor_texto">
+            <div class="campo_editor">
+                <div class="btn_todos">
+                    <img class="btn_editor" src="./img/Ellipse 1.png"></img>
+                    <img class="btn_editor" src="./img/Ellipse 2.png"></img>
+                    <img class="btn_editor" src="./img/Ellipse 3.png"></img>
+                </div>
+                <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                
-                const unfold = (f, seed) => 
-                {
-                  const go = (f, seed, acc) 
-                  => {
-                    &nbsp&nbsp&nbspconst res = f(seed)
-                    &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
-                    : acc
-                    &nbsp }
-                  &nbsp&nbspreturn go(f, seed, [])
-                }</p>
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                    
+                    const unfold = (f, seed) => 
+                    {
+                    const go = (f, seed, acc) 
+                    => {
+                        &nbsp&nbsp&nbspconst res = f(seed)
+                        &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
+                        : acc
+                        &nbsp }
+                    &nbsp&nbspreturn go(f, seed, [])
+                    }</p>
+            </div>
         </div>
     </section>
-    <div class="highlight">
-        Visualizar com highlight
+    <div class="btn_highlight">
+        <p class="highlight">Visualizar com highlight</p>
     </div>
     <section class="projeto_section">
         <h2 class="section_titulo">SEU PROJETO</h2>
-        <input type="text" class="input_projeto" placeholder="Nome do seu projeto">
-        <input type="text" class="input_projeto" placeholder="Descrição do seu projeto">
+        <div class="projeto_info">
+            <input type="text" class="input_projeto" placeholder="Nome do seu projeto">
+            <input type="text" class="input_projeto" placeholder="Descrição do seu projeto">
+        </div>
         <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
+        <div class="projeto_info">
         <input type="text" class="input_projeto" placeholder="JavaScript">
         <div class="select_color">
             <input type="text" class="color_azul">
         </div>
-        <button type="submit" class="btn_salvar">Salvar projeto</button>
+        <button type="submit" class="btn_salvar">Salvar projeto</button></div>
     </section>
 
 </body>
