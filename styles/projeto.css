@@ -1,0 +1,154 @@
+.projeto_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto_info2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_titulo{
+    padding: 1.6rem 0 0.5rem 1rem;
+    color: #FFFFFF;
+    font-family: var(--font-principal);
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    letter-spacing: 5px;
+}
+
+.input_projeto{
+    width: 21.4rem;
+    height: 3.5rem;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+}
+
+.input_projeto[type="text"], textarea{
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.input_projeto::placeholder{ 
+    color:white;
+    opacity: 64%;
+    font-family: var(--font-principal);
+    padding:0.8rem;
+    font-size:1rem;
+}
+
+.input_projeto:focus {
+    outline: none;
+}
+
+.input_descricao{
+    height: 5rem;
+}
+
+ .projeto_info{
+    gap:0.8rem;
+ }
+.input_js{
+    width: 21.4rem;
+    height: 3.5rem;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+}
+.input_js[type="text"], textarea{
+    background-color: rgba(255, 255, 255, 0.16) !important;
+    background: url("../img/Vector.png") no-repeat 20.5rem;
+}
+
+.input_js::placeholder{ 
+    color:white;
+    opacity: 64%;
+    font-family: var(--font-principal);
+    padding:0.8rem;
+    font-size:1rem;
+}
+
+.input_js:focus {
+    outline: none;
+}
+
+
+.select_color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21.4rem;
+    height: 1.8rem;
+    margin: 0.8rem;
+    border: white solid;
+    border-radius: 0.3rem;
+}
+
+.color_azul[type="text"], textarea{
+    background-color:#6BD1FF;
+    width: 20.8rem;
+    height: 1.1rem;
+}
+
+.color_azul:focus {
+    outline: none;
+}
+
+.btn_salvar{
+    width: 21.4rem;
+    height: 3.5rem;
+    margin:0.8rem;
+    border-radius: 0.5rem;
+    background-color:#5081FB;
+    color: #051D3B;
+    font-size:1rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+
+.input_projeto{
+    width: 44rem;
+}
+
+.input_descricao{
+    height: 5rem;
+}
+
+.section_titulo{
+    padding-left: 2rem;
+}
+
+.projeto_info2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.select_color{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.4rem;
+    height: 3.5rem;
+}
+.color_azul[type="text"], textarea{
+    width: 20rem;
+    height: 2.3rem;
+    border-radius: 0.3rem;
+}
+
+.btn_salvar{
+    width: 44rem;;
+}
+}

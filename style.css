@@ -1,0 +1,11 @@
+@import url("styles/header.css");
+@import url("styles/editor.css");
+@import url("styles/projeto.css");
+
+:root {
+    --font-principal: 'Inter';
+  }
+html{
+    background-color:#051D3B ;
+}
+

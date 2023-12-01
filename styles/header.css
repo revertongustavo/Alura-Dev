@@ -1,0 +1,59 @@
+.header_aluradev{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 9.2rem;
+    height: 3.5rem;
+}
+
+.campo_pesquisa{
+   display: none;
+}
+
+.icones_menu{
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+.header_aluradev{
+    padding-top: 1rem;
+    display:flex;
+    align-items: center;
+}
+
+.icones_menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.campo_pesquisa{
+    display: block;
+    width: 27rem;
+    height: 2.8rem;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.5rem;
+    color: white;
+}
+.campo_pesquisa[type="text"], textarea{
+    background-color: rgba(255, 255, 255, 0.16) 
+}
+
+.campo_pesquisa::placeholder{ 
+    color:white;
+    opacity: 64%;
+    font-family: var(--font-principal);
+    padding:0.8rem;
+    font-size:1rem;
+}
+
+
+
+}
