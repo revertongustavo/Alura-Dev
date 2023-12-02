@@ -64,7 +64,7 @@
 }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
 .icones_menu{
     display: none;
@@ -74,5 +74,15 @@
     display:flex;
 }
 
+.campo_pesquisa{
+    width: 32rem ;
+}
 
+}
+
+@media screen and (min-width: 1440px) {
+
+.campo_pesquisa{
+    width: 47rem ;
+}
 }

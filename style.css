@@ -1,6 +1,7 @@
 @import url("styles/header.css");
 @import url("styles/editor.css");
 @import url("styles/projeto.css");
+@import url("styles/aside.css");
 
 :root {
     --font-principal: 'Inter';

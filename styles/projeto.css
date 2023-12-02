@@ -100,7 +100,7 @@
 }
 
 .input_projeto{
-    width: 21rem;
+    width: 100%;
     height: 3.5rem;
     color: #FFFFFF;
     border-radius: 0.5rem;
@@ -161,7 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20.8rem;
+    width: 100%;
     height: 1.8rem;
     margin-top: 0.8rem;
     border: white solid;
@@ -170,7 +170,7 @@
 
 .color_azul[type="text"], textarea{
     background-color:#6BD1FF;
-    width: 20.8rem;
+    width: 95%;
     height: 1.1rem;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .btn_salvar{
-    width: 20.8rem;
+    width: 100%;
     height: 3.5rem;
     margin-top:0.8rem;
     border-radius: 0.5rem;
@@ -189,7 +189,7 @@
     font-weight: 400;
 }
 
-@media screen and (max-width: 1439) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
 .div_projetodef{
     width: 42rem;
@@ -198,16 +198,14 @@
 .div_projetoSec{
     width: 44rem;
 }
-.input_projeto{
-    width: 44rem;
-}
 
 .input_js{
     width: 44rem !important;
 }
 
 .input_descricao{
-    height: 5rem;
+    padding-bottom:2rem;
+    height: 3rem;
 }
 .projeto_info2{
     display: flex;
@@ -220,36 +218,67 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 44rem;
     height: 3.5rem;
 }
 .color_azul[type="text"], textarea{
-    width: 42rem;
     height: 2.1rem;
     border-radius: 0.3rem;
 }
 
-.btn_salvar{
-    width: 44rem;;
-}
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1024px){
 
 .div_projetoSec{
-    padding: 1rem 0 0 3rem;
+    padding: 1rem 0 0 1rem;
     gap:1rem;
 }
+
 .projeto_info{
-    padding-bottom:1rem;
+    padding-bottom:2rem;
 }
+
 .btn_salvar{
     margin-top: 2rem;
 }
 
-.menu_aside{
-    width:19rem;
+.div_projetoSec{
+    width: 12rem;
 }
 
+.select_color{
+    margin-top:1.7rem;
+}
+
+.input_projeto::placeholder, .input_js::placeholder{ 
+    font-size: 0.8rem;
+}
+
+}
+
+
+@media screen and (min-width: 1440px){
+
+.div_projetoSec{
+    padding: 1rem 0 0 2rem;
+    gap:1rem;
+}
+.projeto_info{
+    padding-bottom:2rem;
+}
+.btn_salvar{
+    margin-top: 2rem;
+}
+.div_projetoSec{
+    width: 20rem;
+}
+
+.select_color{
+    margin-top:1.7rem;
+}
+
+.div_projetoSec{
+    width: 17rem;
+}
 }
 

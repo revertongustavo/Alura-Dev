@@ -1,0 +1,70 @@
+.div_aside{
+    width:19rem;
+    display: none;
+    grid-template-areas:
+    "titulo titulo"
+    "btn1 label1"
+    "btn2 label2";
+    grid-template-columns: repeat(2, 3rem auto);
+    padding-top: 2rem;
+    gap:1rem;
+}
+
+.btn_aside1{
+    grid-area: btn1;
+}
+
+.lb_btn1{
+    grid-area: label1;
+    align-self:center;    
+}
+
+.lb_btn2{
+    grid-area: label2;
+    align-self:center;    
+}
+
+.btn_aside2{
+    grid-area: btn2;
+}
+
+.titulo_aside{
+    grid-area: titulo;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    letter-spacing: 0.4em;
+}
+
+.btn_aside1, .btn_aside2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5081FB;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.lb_btn1, .lb_btn2{
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+@media screen and (min-width: 1024px){
+    .div_aside{
+        display: grid;
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .div_aside{
+        width: 21rem;
+    }
+}

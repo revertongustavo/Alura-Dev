@@ -2,7 +2,11 @@
     display: flex;
     justify-content: center;
 }
-
+.flex_desktop{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .editor_texto{
     display: flex;
     justify-content: center;
@@ -44,15 +48,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.7rem 0 0.7rem 0;
+    padding-top: 1rem;
 }
 .highlight{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 21rem;
     height: 3.5rem;
-    background-color:rgba(80, 129, 251, 0.08) ;
+    background-color:rgba(80, 129, 251, 0.08);
     color: #FFFFFF;
     font-family: var(--font-principal);
     font-size: 1rem;
@@ -72,28 +76,53 @@
     width: 40rem;
     height: 21.5rem;
 }
-
 .highlight{
-    width: 44rem !important;
+    width: 44rem;
 }
 
 }
 
-@media screen and (width: 1024px) {
+@media screen and (min-width: 1024px) {
 
-    .section_editor{
-        padding-top: 5rem;
-    }
-    .btn_highlight{
-        padding-top: 3rem;
-    }
-}
-
-@media screen and (width: 1440px){
 .flex_desktop{
-    display: flex;
+    flex-direction: row;
 }
+
+.section_editor{
+    justify-content: center ;
+    width: 32rem;
+    height: 27rem;
+}
+
+.editor_texto{
+    width: 100%;
+    height: 100%;
+}
+
+.campo_editor{
+    width: 90%;
+    height: 90%;
+}
+
 .btn_highlight{
-    padding-top: 2rem;
+    padding-top: 3rem;
+}
+.highlight{
+    width: 30rem;
+}
+}
+
+@media screen and (min-width: 1440px){
+
+.section_editor{
+    justify-content: center ;
+    width: 47rem;
+}
+
+.btn_highlight{
+    padding-top: 3rem;
+}
+.highlight{
+    width: 47rem;
 }
 }
