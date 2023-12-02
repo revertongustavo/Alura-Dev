@@ -88,3 +88,12 @@
         padding-top: 3rem;
     }
 }
+
+@media screen and (width: 1440px){
+.flex_desktop{
+    display: flex;
+}
+.btn_highlight{
+    padding-top: 2rem;
+}
+}

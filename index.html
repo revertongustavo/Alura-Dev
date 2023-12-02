@@ -18,70 +18,80 @@
             <i class="fa-solid fa-magnifying-glass icon_pesquisa" style="color: #ffffff;"></i>
             <i class="fa-solid fa-bars icon_menu" style="color: #ffffff;"></i>
         </div>
+        <div class="perfil_usuario">
+            <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
+            <p class="nome_perfil">Harry</p>
+        </div>
     </header>
-    <section class="section_editor">
-        <div class="editor_texto">
-            <div class="campo_editor">
-                <div class="btn_todos">
-                    <img class="btn_editor" src="./img/Ellipse 1.png"></img>
-                    <img class="btn_editor" src="./img/Ellipse 2.png"></img>
-                    <img class="btn_editor" src="./img/Ellipse 3.png"></img>
-                </div>
-                <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+    <div class="flex_desktop">
+        <aside class="menu_aside">
+            <h2 class="titulo_aside">MENU</h2>
+        </aside>
+        <div class="editor_highlight">
+        <section class="section_editor">
+            <div class="editor_texto">
+                <div class="campo_editor">
+                    <div class="btn_todos">
+                        <img class="btn_editor" src="./img/Ellipse 1.png"></img>
+                        <img class="btn_editor" src="./img/Ellipse 2.png"></img>
+                        <img class="btn_editor" src="./img/Ellipse 3.png"></img>
+                    </div>
+                    <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                    
-                    const unfold = (f, seed) => 
-                    {
-                    const go = (f, seed, acc) 
-                    => {
-                        &nbsp&nbsp&nbspconst res = f(seed)
-                        &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
-                        : acc
-                        &nbsp }
-                    &nbsp&nbspreturn go(f, seed, [])
-                    }</p>
+                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                        
+                        const unfold = (f, seed) => 
+                        {
+                        const go = (f, seed, acc) 
+                        => {
+                            &nbsp&nbsp&nbspconst res = f(seed)
+                            &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
+                            : acc
+                            &nbsp }
+                        &nbsp&nbspreturn go(f, seed, [])
+                        }</p>
+            </div>
+        </section>
+            <div class="btn_highlight">
+                <p class="highlight">Visualizar com highlight</p>
             </div>
         </div>
-    </section>
-    <div class="btn_highlight">
-        <p class="highlight">Visualizar com highlight</p>
+        <section class="projeto_definido">
+            <div class="div_projetodef">
+                <h1 class="titulo_projeto">Título do projeto</h1>
+                <p class="descricao_projeto">Essa é a descrição do meu projeto</p>
+                <div class="status_perfil">
+                    <div class="curtidas_icon">
+                        <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+                        <label class="qt_comment">9</label>
+                        <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                        <label class="qt_curtidas">9</label>
+                    </div>
+                    <div class="photo_nick">
+                        <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
+                        <p class="nome_perfil">@Harry</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projeto_section">
+            <div class="div_projetoSec">
+                <h2 class="section_titulo">SEU PROJETO</h2>
+                <div class="projeto_info">
+                    <input type="text" class="input_projeto" placeholder="Nome do seu projeto">
+                    <input type="text" class="input_projeto input_descricao" placeholder="Descrição do seu projeto">
+                </div>
+                <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
+                <div class="projeto_info2">
+                <input type="text" class="input_js" placeholder="JavaScript">
+                <div class="select_color">
+                    <input type="text" class="color_azul">
+                </div>
+                <button type="submit" class="btn_salvar">Salvar projeto</button></div>
+            </div>
+        </section>
     </div>
-    <section class="projeto_definido">
-        <div class="div_projetodef">
-            <h1 class="titulo_projeto">Título do projeto</h1>
-            <p class="descricao_projeto">Essa é a descrição do meu projeto</p>
-            <div class="status_perfil">
-                <div class="curtidas_icon">
-                    <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
-                    <label class="qt_comment">9</label>
-                    <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
-                    <label class="qt_curtidas">9</label>
-                </div>
-                <div class="photo_nick">
-                    <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
-                    <p class="nome_perfil">@Harry</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projeto_section">
-        <div class="div_projetoSec">
-            <h2 class="section_titulo">SEU PROJETO</h2>
-            <div class="projeto_info">
-                <input type="text" class="input_projeto" placeholder="Nome do seu projeto">
-                <input type="text" class="input_projeto input_descricao" placeholder="Descrição do seu projeto">
-            </div>
-            <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
-            <div class="projeto_info2">
-            <input type="text" class="input_js" placeholder="JavaScript">
-            <div class="select_color">
-                <input type="text" class="color_azul">
-            </div>
-            <button type="submit" class="btn_salvar">Salvar projeto</button></div>
-        </div>
-    </section>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 .projeto_definido{
-    display: flex;
+    display: none;
     justify-content: center;
 }
 .div_projetodef{
@@ -189,7 +189,7 @@
     font-weight: 400;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1439) and (min-width: 768px) {
 
 .div_projetodef{
     width: 42rem;
@@ -232,5 +232,24 @@
 .btn_salvar{
     width: 44rem;;
 }
+}
+
+@media screen and (min-width: 1440px){
+
+.div_projetoSec{
+    padding: 1rem 0 0 3rem;
+    gap:1rem;
+}
+.projeto_info{
+    padding-bottom:1rem;
+}
+.btn_salvar{
+    margin-top: 2rem;
+}
+
+.menu_aside{
+    width:19rem;
+}
+
 }
 
