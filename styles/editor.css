@@ -78,3 +78,13 @@
 }
 
 }
+
+@media screen and (width: 1024px) {
+
+    .section_editor{
+        padding-top: 5rem;
+    }
+    .btn_highlight{
+        padding-top: 3rem;
+    }
+}

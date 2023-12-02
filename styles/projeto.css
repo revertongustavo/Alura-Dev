@@ -141,7 +141,8 @@
 }
 .input_js[type="text"], textarea{
     background-color: rgba(255, 255, 255, 0.16) !important;
-    background: url("../img/Vector.png") no-repeat 20.5rem;
+    background: url("../img/Vector.png") no-repeat right center;
+    background-position-x: 98%;
 }
 
 .input_js::placeholder{ 
@@ -156,14 +157,13 @@
     outline: none;
 }
 
-
 .select_color{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20.8rem;
     height: 1.8rem;
-    margin: 0.8rem;
+    margin-top: 0.8rem;
     border: white solid;
     border-radius: 0.3rem;
 }
@@ -181,7 +181,7 @@
 .btn_salvar{
     width: 20.8rem;
     height: 3.5rem;
-    margin:0.8rem;
+    margin-top:0.8rem;
     border-radius: 0.5rem;
     background-color:#5081FB;
     color: #051D3B;
@@ -191,18 +191,24 @@
 
 @media screen and (min-width: 768px) {
 
+.div_projetodef{
+    width: 42rem;
+}
+
+.div_projetoSec{
+    width: 44rem;
+}
 .input_projeto{
     width: 44rem;
+}
+
+.input_js{
+    width: 44rem !important;
 }
 
 .input_descricao{
     height: 5rem;
 }
-
-.section_titulo{
-    padding-left: 2rem;
-}
-
 .projeto_info2{
     display: flex;
     flex-direction: row;
@@ -214,12 +220,12 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 21.4rem;
+    width: 44rem;
     height: 3.5rem;
 }
 .color_azul[type="text"], textarea{
-    width: 20rem;
-    height: 2.3rem;
+    width: 42rem;
+    height: 2.1rem;
     border-radius: 0.3rem;
 }
 
@@ -228,13 +234,3 @@
 }
 }
 
-@media screen and (width: 1024px) {
-
-.section_editor{
-    padding-top: 5rem;
-}
-.btn_highlight{
-    padding-top: 3rem;
-}
-
-}
