@@ -12,3 +12,12 @@ function aplicaHighlight(){
 botao.addEventListener('click', () => {
     aplicaHighlight()
 })
+
+const btnSalvar = document.querySelector('.btn_salvar')
+const editor_background = document.getElementById('editor_texto')
+
+btnSalvar.addEventListener('click',() => {
+    const corDoEditor =  document.querySelector('.select_color').value;
+    editor_background.style.backgroundColor = corDoEditor;
+
+})
