@@ -46,7 +46,10 @@
                         <img class="btn_editor" src="./img/Ellipse 2.png"></img>
                         <img class="btn_editor" src="./img/Ellipse 3.png"></img>
                     </div>
-                    <p class="codigo_editor">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                    <pre>
+                        <code class="codigo_editor javascript" contenteditable= "true" aria-label="Editor de código">
+                        
+                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                         
@@ -59,7 +62,10 @@
                             : acc
                             &nbsp }
                         &nbsp&nbspreturn go(f, seed, [])
-                        }</p>
+                        }
+                        </code>
+                </pre>
+                    
             </div>
         </section>
             <div class="btn_highlight">
@@ -95,6 +101,11 @@
                 <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
                 <div class="projeto_info2">
                 <input type="text" class="input_js" placeholder="JavaScript">
+                <!-- <select name="linguagem" id="linguagem" class="input_js">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option> -->
+                </select>
                 <div class="select_color">
                     <input type="text" class="color_azul">
                 </div>
@@ -102,6 +113,8 @@
             </div>
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script type="module" src="main.js"></script>
 </body>
 </html>

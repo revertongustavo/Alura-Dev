@@ -30,3 +30,17 @@ botoes_aside.forEach(button =>{
 //     btn_aside1.classList.add('outlined')
 // });
 
+const linguagem = document.querySelector('.linguagem)')
+const areaDoCodigo = document.querySelector('.codigo-wrapper')
+const botao = document.querySelector('.botao')
+
+function aplicaHighlight(){
+        const codigo = areaDoCodigo.innerText
+        areaDoCodigo.innerHTML = `<code class="preview hljhs ${linguagem.value}" contenteditable="true" aria-label="Editor de código'></code>`
+        areaDoCodigo.querySelector('code').textContent = codigo
+        hljs.highlightEleemnt()
+}
+
+botao.addEventListener('click', () => {
+    aplicaHighlight()
+})

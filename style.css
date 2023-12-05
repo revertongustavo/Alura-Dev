@@ -2,6 +2,7 @@
 @import url("styles/editor.css");
 @import url("styles/projeto.css");
 @import url("styles/aside.css");
+@import url("styles/dracula.css");
 
 :root {
     --font-principal: 'Inter';
