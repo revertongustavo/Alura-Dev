@@ -131,26 +131,16 @@
  .projeto_info{
     gap:0.8rem;
  }
+
 .input_js{
     width: 20.8rem;
     height: 3.5rem;
+    padding-left: 0.5rem;
     color: #FFFFFF;
     border-radius: 0.5rem;
     border: none;
-    color: white;
-}
-.input_js[type="text"], textarea{
-    background-color: rgba(255, 255, 255, 0.16) !important;
-    background: url("../img/Vector.png") no-repeat right center;
-    background-position-x: 98%;
-}
-
-.input_js::placeholder{ 
-    color:white;
-    opacity: 64%;
-    font-family: var(--font-principal);
-    padding:0.8rem;
-    font-size:1rem;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.16);
 }
 
 .input_js:focus {

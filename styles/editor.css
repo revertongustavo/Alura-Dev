@@ -33,7 +33,7 @@
     padding: 0 0 1rem 0.5rem
 }
 
-.codigo_editor{
+.codigo-wrapper{
     display: flex;
     color: white;
     font-family: 'Roboto Mono';
@@ -42,6 +42,7 @@
     line-height: 1.1rem;
     font-weight: 400;
     white-space: pre-line;
+    background-color: #000000;
 }
 
 .btn_highlight{

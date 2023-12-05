@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header_aluradev">
@@ -46,9 +46,8 @@
                         <img class="btn_editor" src="./img/Ellipse 2.png"></img>
                         <img class="btn_editor" src="./img/Ellipse 3.png"></img>
                     </div>
-                    <pre>
+                    <div class="codigo-wrapper">
                         <code class="codigo_editor javascript" contenteditable= "true" aria-label="Editor de código">
-                        
                         const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                         const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -63,9 +62,8 @@
                             &nbsp }
                         &nbsp&nbspreturn go(f, seed, [])
                         }
-                        </code>
-                </pre>
-                    
+                        </code>         
+                    </div>       
             </div>
         </section>
             <div class="btn_highlight">
@@ -100,11 +98,11 @@
                 </div>
                 <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
                 <div class="projeto_info2">
-                <input type="text" class="input_js" placeholder="JavaScript">
-                <!-- <select name="linguagem" id="linguagem" class="input_js">
+                <!-- <input type="text" class="input_js" placeholder="JavaScript"> -->
+                <select name="linguagem" id="linguagem" class="input_js">
                     <option value="javascript">JavaScript</option>
                     <option value="html">HTML</option>
-                    <option value="css">CSS</option> -->
+                    <option value="css">CSS</option>
                 </select>
                 <div class="select_color">
                     <input type="text" class="color_azul">
@@ -114,7 +112,7 @@
         </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll()</script>
     <script type="module" src="main.js"></script>
 </body>
 </html>
