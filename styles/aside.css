@@ -11,6 +11,26 @@
     gap:1rem;
 }
 
+.div_asideMobile{
+        width:15rem;
+        height: 35rem;
+        display: grid;
+        grid-template-areas:
+        "btn1 label1"
+        "btn2 label2"
+        "linha linha"
+        "perfil perfil";
+        grid-template-columns: repeat(2, 4rem auto);
+        grid-template-rows: 4rem 4rem 2rem 10rem;
+        margin-top:1rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        row-gap:1rem;
+        background-color: #2D415B;
+        margin-right: 0.3rem;
+        border-radius: 0.5rem;
+}
+
 .btn_aside1{
     grid-area: btn1;
     align-self:center;  
@@ -30,6 +50,27 @@
 .btn_aside2{
     grid-area: btn2;
     align-self:center;  
+}
+
+.linha_aside{
+    grid-area: linha;
+    align-self:center;
+    display:none;
+    color: white;
+    opacity: 0.08;
+}
+
+.perfil_aside{
+    grid-area: perfil;
+    align-self: self-start;
+    display:none;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0.5rem;
+}
+
+.foto_aside{
+    height: 2rem
 }
 
 .titulo_aside{

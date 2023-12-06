@@ -15,8 +15,8 @@
         <img src="./img/Logo.svg"  alt="logo AluraDev" class="logo">
         <input type="text" class="campo_pesquisa" placeholder="Busque por algo">
         <div class="icones_menu">
-            <i class="fa-solid fa-magnifying-glass icon_pesquisa" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-bars icon_menu" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-magnifying-glass fa-lg icon_pesquisa" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-bars fa-lg icon_menu" id="icon_menu" style="color: #ffffff;"></i>
         </div>
         <div class="perfil_usuario">
             <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
@@ -24,9 +24,9 @@
         </div>
     </header>
     <div class="flex_desktop">
-        <aside class="menu_aside">
-            <div class="div_aside">
-                <h2 class="titulo_aside">MENU</h2>
+        <aside class="menu_aside" id="menu_aside">
+            <div class="div_aside" id="div_aside">
+                <h2 class="titulo_aside" id="titulo_aside">MENU</h2>
                 <div class="btn_aside btn_aside1">
                     <i class="fa-solid fa-code" style="color: #ffffff;"></i>
                 </div>
@@ -35,9 +35,14 @@
                     <i class="fa-solid fa-users" style="color: #ffffff;"></i>
                 </div>
                 <label class="lb_btn2">Comunidade</label>
+                <label class="linha_aside" id="linha_aside">___________________________</label>
+                <div class="perfil_aside" id="perfil_aside">
+                    <img src="./img/Photo.png" alt="foto do usuario" class="foto_aside">
+                    <p class="nome_perfil">Harry</p>
+                </div>
             </div>
         </aside>
-        <div class="editor_highlight">
+        <div class="editor_highlight" id="editor_highlight">
         <section class="section_editor">
             <div class="editor_texto" id="editor_texto">
                 <div class="campo_editor">
@@ -89,7 +94,7 @@
             </div>
         </section>
 
-        <section class="projeto_section">
+        <section class="projeto_section" id="projeto_section">
             <div class="div_projetoSec">
                 <h2 class="section_titulo">SEU PROJETO</h2>
                 <div class="projeto_info">
