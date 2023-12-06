@@ -29,6 +29,7 @@ const titulo_aside = document.getElementById('titulo_aside')
 const icon_menu = document.getElementById('icon_menu')
 const perfil_aside = document.getElementById('perfil_aside')
 const linha_aside = document.getElementById('linha_aside')
+const icon_menu2 = document.getElementById('icon_menu2')
 
 btn_menuHeader.addEventListener('click', () => {
     section_editor.style.display ='none'
@@ -40,4 +41,42 @@ btn_menuHeader.addEventListener('click', () => {
     titulo_aside.style.display = 'none'
     perfil_aside.style.display = 'flex'
     linha_aside.style.display = 'block'
+    icon_menu2.style.display = 'block'
+    icon_menu.style.display = 'none'
 })
+
+icon_menu2.addEventListener('click', () => {
+    abrir_menuAside(false);
+} )
+
+function abrir_menuAside(estado){
+
+    if(estado){
+        section_editor.style.display ='none'
+        section_projeto.style.display ='none'
+        section_aside.style.display='flex'
+        section_aside.style.justifyContent = 'end'
+        div_aside.classList.remove('div_aside')
+        div_aside.classList.add('div_asideMobile')
+        titulo_aside.style.display = 'none'
+        perfil_aside.style.display = 'flex'
+        linha_aside.style.display = 'block'
+        icon_menu2.style.display = 'block'
+        icon_menu.style.display = 'none'
+    }
+    else{
+        section_editor.style.display ='block'
+        section_projeto.style.display ='flex'
+        section_aside.style.display='flex'
+        section_aside.style.justifyContent = 'start'
+        div_aside.classList.remove('div_asideMobile')
+        div_aside.classList.add('div_aside')
+        titulo_aside.style.display = 'block'
+        perfil_aside.style.display = 'none'
+        linha_aside.style.display = 'none'
+        icon_menu2.style.display = 'none'
+        icon_menu.style.display = 'block'
+    }
+
+
+}

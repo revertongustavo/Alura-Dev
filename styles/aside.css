@@ -73,6 +73,10 @@
     height: 2rem
 }
 
+.icon_menu2{
+    display: none;
+}
+
 .titulo_aside{
     grid-area: titulo;
     color: #FFFFFF;
