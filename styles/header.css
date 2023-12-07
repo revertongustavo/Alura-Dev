@@ -26,8 +26,10 @@
 .icones_menu{
     display: flex;
     align-items: center;
+    width:4rem;
+    height: 3.5rem;
     gap: 1rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {

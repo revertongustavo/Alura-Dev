@@ -32,17 +32,7 @@ const linha_aside = document.getElementById('linha_aside')
 const icon_menu2 = document.getElementById('icon_menu2')
 
 btn_menuHeader.addEventListener('click', () => {
-    section_editor.style.display ='none'
-    section_projeto.style.display ='none'
-    section_aside.style.display='flex'
-    section_aside.style.justifyContent = 'end'
-    div_aside.classList.remove('div_aside')
-    div_aside.classList.add('div_asideMobile')
-    titulo_aside.style.display = 'none'
-    perfil_aside.style.display = 'flex'
-    linha_aside.style.display = 'block'
-    icon_menu2.style.display = 'block'
-    icon_menu.style.display = 'none'
+    abrir_menuAside(true)
 })
 
 icon_menu2.addEventListener('click', () => {
@@ -63,6 +53,8 @@ function abrir_menuAside(estado){
         linha_aside.style.display = 'block'
         icon_menu2.style.display = 'block'
         icon_menu.style.display = 'none'
+        if(width_tablet.matches)
+            display_pesquisa(true)
     }
     else{
         section_editor.style.display ='block'
@@ -76,7 +68,17 @@ function abrir_menuAside(estado){
         linha_aside.style.display = 'none'
         icon_menu2.style.display = 'none'
         icon_menu.style.display = 'block'
+        if(width_tablet.matches)
+        display_pesquisa(false)
     }
+}
 
+var width_tablet = window.matchMedia("(min-width: 768px)")
+const icon_pesquisa = document.getElementById('icon_pesquisa')
 
+function display_pesquisa(estado){
+    if(estado==true ){
+        icon_pesquisa.style.visibility='hidden';
+    } else
+        icon_pesquisa.style.visibility='visible';
 }
