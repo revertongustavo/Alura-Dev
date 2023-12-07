@@ -1,17 +1,16 @@
 .projeto_definido{
-    display: none;
+    display: flex;
     justify-content: center;
 }
 .div_projetodef{
     background-color: rgba(0, 0, 0, 0.16);
     width: 18.5rem;
-    height: 7rem;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap:0.5rem;
     border-radius: 0.5rem;
-    padding: 1.2rem 
+    padding: 1.2rem;
 }
 
 .nome_perfil{
@@ -41,7 +40,7 @@
     letter-spacing: 0em;
 }
 .status_perfil{
-   display: flex;
+   display: none;
    justify-content: space-between;
    padding-top: 1rem;
 }

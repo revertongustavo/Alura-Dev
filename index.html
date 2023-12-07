@@ -13,11 +13,11 @@
 <body>
     <header class="header_aluradev">
         <img src="./img/Logo.svg"  alt="logo AluraDev" class="logo">
-        <input type="text" class="campo_pesquisa" placeholder="Busque por algo">
+        <input type="text" class="campo_pesquisa" id="campo_pesquisa" placeholder="Busque por algo">
         <div class="icones_menu">
-            <i class="fa-solid fa-magnifying-glass fa-lg icon_pesquisa" id="icon_pesquisa" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-bars fa-lg icon_menu" id="icon_menu" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-xmark fa-2x icon_menu2" id="icon_menu2" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-magnifying-glass fa-lg icon_pesquisa" id="icon_pesquisa"></i>
+            <i class="fa-solid fa-bars fa-lg icon_menu" id="icon_menu"></i>
+            <i class="fa-solid fa-xmark fa-lg icon_menu2" id="icon_menu2"></i>
         </div>
         <div class="perfil_usuario">
             <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
@@ -44,56 +44,56 @@
             </div>
         </aside>
         <div class="editor_highlight" id="editor_highlight">
-        <section class="section_editor">
-            <div class="editor_texto" id="editor_texto">
-                <div class="campo_editor">
-                    <div class="btn_todos">
-                        <img class="btn_editor" src="./img/Ellipse 1.png"></img>
-                        <img class="btn_editor" src="./img/Ellipse 2.png"></img>
-                        <img class="btn_editor" src="./img/Ellipse 3.png"></img>
-                    </div>
-                    <div class="codigo-wrapper">
-                        <code class="codigo_editor javascript" contenteditable= "true" aria-label="Editor de código">
-                        const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+            <section class="section_editor">
+                <div class="editor_texto" id="editor_texto">
+                    <div class="campo_editor">
+                        <div class="btn_todos">
+                            <img class="btn_editor" src="./img/Ellipse 1.png"></img>
+                            <img class="btn_editor" src="./img/Ellipse 2.png"></img>
+                            <img class="btn_editor" src="./img/Ellipse 3.png"></img>
+                        </div>
+                        <div class="codigo-wrapper">
+                            <code class="codigo_editor javascript" contenteditable= "true" aria-label="Editor de código">
+                            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
-                        const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                        
-                        const unfold = (f, seed) => 
-                        {
-                        const go = (f, seed, acc) 
-                        => {
-                            &nbsp&nbsp&nbspconst res = f(seed)
-                            &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
-                            : acc
-                            &nbsp }
-                        &nbsp&nbspreturn go(f, seed, [])
-                        }
-                        </code>         
-                    </div>       
-            </div>
-        </section>
+                            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            
+                            const unfold = (f, seed) => 
+                            {
+                            const go = (f, seed, acc) 
+                            => {
+                                &nbsp&nbsp&nbspconst res = f(seed)
+                                &nbsp&nbsp&nbsppreturn res ? go(f, res[1], acc.concat([res[0]])) 
+                                : acc
+                                &nbsp }
+                            &nbsp&nbspreturn go(f, seed, [])
+                            }
+                            </code>         
+                        </div>       
+                </div>
+            </section>
             <div class="btn_highlight">
                 <p class="highlight">Visualizar com highlight</p>
             </div>
-        </div>
-        <section class="projeto_definido">
-            <div class="div_projetodef">
-                <h1 class="titulo_projeto">Título do projeto</h1>
-                <p class="descricao_projeto">Essa é a descrição do meu projeto</p>
-                <div class="status_perfil">
-                    <div class="curtidas_icon">
-                        <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
-                        <label class="qt_comment">9</label>
-                        <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
-                        <label class="qt_curtidas">9</label>
-                    </div>
-                    <div class="photo_nick">
-                        <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
-                        <p class="nome_perfil">@Harry</p>
+            <section class="projeto_definido" id="projeto_definido">
+                <div class="div_projetodef">
+                    <h1 class="titulo_projeto">Título do projeto</h1>
+                    <p class="descricao_projeto">Essa é a descrição do meu projeto</p>
+                    <div class="status_perfil" id="status_perfil">
+                        <div class="curtidas_icon">
+                            <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+                            <label class="qt_comment">9</label>
+                            <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                            <label class="qt_curtidas">9</label>
+                        </div>
+                        <div class="photo_nick">
+                            <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
+                            <p class="nome_perfil">@Harry</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <section class="projeto_section" id="projeto_section">
             <div class="div_projetoSec">
@@ -110,7 +110,7 @@
                     <option value="html">HTML</option>
                     <option value="css">CSS</option>
                 </select>
-                <select name="linguagem" id="linguagem" class="select_color">
+                <select name="cor" id="cor" class="select_color">
                     <option value="#FFC46B">Amarelo</option>
                     <option value="#6BD1FF">Azul</option>
                     <option value="white">Branco</option>

@@ -1,6 +1,7 @@
 const linguagem = document.querySelector('.input_js')
 const areaDoCodigo = document.querySelector('.codigo-wrapper')
 const botao = document.querySelector('.btn_highlight')
+const status_perfil = document.getElementById('status_perfil')
 
 function aplicaHighlight(){
         const codigo = areaDoCodigo.innerText
@@ -20,4 +21,12 @@ btnSalvar.addEventListener('click',() => {
     const corDoEditor =  document.querySelector('.select_color').value;
     editor_background.style.backgroundColor = corDoEditor;
 
+})
+
+projeto_definido.addEventListener('mouseover', () => {
+    status_perfil.style.display='flex'
+})
+
+projeto_definido.addEventListener('mouseout', () => {
+    status_perfil.style.display='none'
 })

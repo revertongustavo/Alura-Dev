@@ -26,10 +26,19 @@
 .icones_menu{
     display: flex;
     align-items: center;
-    width:4rem;
+    width:5rem;
     height: 3.5rem;
     gap: 1rem;
     padding-right: 0.5rem;
+}
+.icon_pesquisa, .icon_menu, .icon_menu2{
+    padding: 1rem 0.3rem 1rem 0.5rem;
+    color: #ffffff;
+}
+
+.icon_menu:hover, .icon_pesquisa:hover, .icon_menu2:hover {
+    background-color:rgba(80, 129, 251, 0.08);
+    border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
