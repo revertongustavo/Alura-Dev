@@ -47,7 +47,22 @@
 
 .curtidas_icon{
     display: flex;
+}
+
+.interacoes_stages{
+    display: flex;
     gap: 0.5rem;
+    padding:0.7rem;
+}
+
+.interacoes_stages:hover{
+    background-color:#FFFFFF14;
+    border-radius: 0.5rem;
+}
+
+.interacoes_stages:active{
+    background-color:#FFFFFF29;
+    border-radius: 0.5rem;
 }
 
 .btn_like{
@@ -130,6 +145,10 @@
     font-size:1rem;
 }
 
+.input_projeto:hover{
+    background:#FFFFFF3D;
+}
+
 .input_projeto:focus {
     outline: none;
 }
@@ -154,6 +173,10 @@
     outline: 0;
 }
 
+.input_js:hover{
+    background:#FFFFFF3D;
+}
+
 .select_color{
     display: flex;
     align-items: center;
@@ -169,6 +192,10 @@
     outline: 0;
 }
 
+.select_color:hover {
+    background:#FFFFFF3D;
+}
+
 .btn_salvar{
     width: 100%;
     height: 3.5rem;
@@ -179,6 +206,19 @@
     font-size:1rem;
     font-weight: 400;
     border: none;
+}
+
+.btn_salvar:hover{
+    background-color: #7BA4FC;
+}
+
+.btn_salvar:active{
+    background-color: #7BA4FC;
+    border: 4px solid #5081FBB8;
+}
+
+.btn_salvar:focus{
+    background-color:#96B9FD;
 }
 
 .input option {
