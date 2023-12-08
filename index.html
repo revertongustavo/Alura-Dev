@@ -45,9 +45,9 @@
                 </div>
             </div>
         </aside>
-        <div class="editor_highlight" id="editor_highlight">
-            <section class="section_editor">
-                <div class="editor_texto" id="editor_texto">
+        <section class="editor_highlight" id="editor_highlight">
+            <ul class="section_editor">
+                <il class="editor_texto" id="editor_texto">
                     <div class="campo_editor">
                         <div class="btn_todos">
                             <img class="btn_editor" src="./img/Ellipse 1.png"></img>
@@ -55,7 +55,7 @@
                             <img class="btn_editor" src="./img/Ellipse 3.png"></img>
                         </div>
                         <div class="codigo-wrapper">
-                            <code class="codigo_editor javascript" contenteditable= "true" aria-label="Editor de código">
+                            <code class="codigo_editor javascript" id= "codigo_editor" contenteditable= "true" aria-label="Editor de código">
                             const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
                             const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -72,12 +72,13 @@
                             }
                             </code>         
                         </div>       
-                </div>
-            </section>
-            <div class="btn_highlight">
+                    </div>
+                </il>
+            </ul>
+            <div class="btn_highlight" id="btn_highlight">
                 <p class="highlight">Visualizar com highlight</p>
             </div>
-            <section class="projeto_definido" id="projeto_definido">
+            <il class="projeto_definido" id="projeto_definido">
                 <div class="div_projetodef">
                     <h1 class="titulo_projeto">Título do projeto</h1>
                     <p class="descricao_projeto">Essa é a descrição do meu projeto</p>
@@ -98,15 +99,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </il>
+        </section>
 
         <section class="projeto_section" id="projeto_section">
             <div class="div_projetoSec">
                 <h2 class="section_titulo">SEU PROJETO</h2>
                 <div class="projeto_info">
-                    <input type="text" class="input_projeto" placeholder="Nome do seu projeto">
-                    <input type="text" class="input_projeto input_descricao" placeholder="Descrição do seu projeto">
+                    <input type="text" class="input_projeto" id = "input_nome" placeholder="Nome do seu projeto">
+                    <input type="text" class="input_projeto input_descricao" id = "input_descricao" placeholder="Descrição do seu projeto">
                 </div>
                 <h2 class="section_titulo">PERSONALIZAÇÃO</h2>
                 <div class="projeto_info2">
