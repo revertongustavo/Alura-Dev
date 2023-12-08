@@ -50,6 +50,14 @@
     gap: 0.5rem;
 }
 
+.btn_like{
+    color:white;
+}
+
+.btn_like_red{
+    color:red;
+}
+
 .qt_comment, .qt_curtidas{
     color: #FFFFFF;
     font-family: 'Inter';
