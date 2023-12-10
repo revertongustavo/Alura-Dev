@@ -1,11 +1,18 @@
 .section_editor{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .flex_desktop{
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.flex_desktop_comunidade{
+    justify-content: start;
+    align-items: baseline;
 }
 .editor_texto{
     display: flex;
@@ -90,7 +97,6 @@
 }
 
 .section_editor{
-    justify-content: center ;
     width: 32rem;
     height: 27rem;
 }

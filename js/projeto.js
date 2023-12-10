@@ -26,12 +26,14 @@ btnSalvar.addEventListener('click',() => {
     const descricao_projeto = document.getElementById("input_descricao").value
     const linguagem_projeto = document.getElementById("linguagem").value
     const cor_projeto = document.getElementById("cor").value
+    const codigo = codigo_editor.textContent;
 
     const projeto_informacoes = {
         nome_projeto: nome_projeto,
         descricao: descricao_projeto,
         linguagem: linguagem_projeto,
-        cor: cor_projeto
+        cor: cor_projeto,
+        codigo: codigo
     }
         alterar_cor(cor_projeto)
         saveNewItem(projeto_informacoes)
