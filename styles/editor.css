@@ -4,15 +4,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.section_editor_comunidade{
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
 .flex_desktop{
     display:flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .flex_desktop_comunidade{
     justify-content: start;
-    align-items: baseline;
 }
 .editor_texto{
     display: flex;
@@ -24,12 +30,22 @@
     height: 30rem;
     border-radius: 0.5rem;
 }
-
+.editor_texto_comunidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #6BD1FF;
+    width: 70%;
+    height: 17rem ;
+    border-radius: 0.5rem;
+}
 .campo_editor{
     background-color: black;
     width:17rem;
     height: 26rem;
     border-radius: 0.5rem;
+    overflow-y: scroll
 }
 
 .btn_editor{
@@ -98,12 +114,11 @@
 
 .section_editor{
     width: 32rem;
-    height: 27rem;
 }
 
 .editor_texto{
     width: 100%;
-    height: 100%;
+    height: 27rem;
 }
 
 .campo_editor{
@@ -122,7 +137,6 @@
 @media screen and (min-width: 1440px){
 
 .section_editor{
-    justify-content: center ;
     width: 47rem;
 }
 
@@ -132,4 +146,5 @@
 .highlight{
     width: 47rem;
 }
+
 }

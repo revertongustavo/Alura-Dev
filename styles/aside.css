@@ -5,7 +5,7 @@
     "titulo titulo"
     "btn1 label1"
     "btn2 label2";
-    grid-template-columns: repeat(2, 4rem auto);
+    grid-template-columns: repeat(1, 4rem auto);
     grid-template-rows: 2rem repeat(2, 4rem 4rem);
     padding-top: 2rem;
     gap:1rem;
@@ -20,7 +20,7 @@
         "btn2 label2"
         "linha linha"
         "perfil perfil";
-        grid-template-columns: repeat(2, 4rem auto);
+        grid-template-columns: repeat(1, 4rem auto);
         grid-template-rows: 4rem 4rem 2rem 10rem;
         margin-top:1rem;
         padding-top: 1rem;
@@ -132,6 +132,7 @@
 
 @media screen and (min-width: 1440px){
     .div_aside{
-        width: 21rem;
+        width: 20rem;
+        padding-left: 1rem;
     }
 }

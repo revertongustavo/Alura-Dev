@@ -1,4 +1,5 @@
 const btn_comunidade = document.querySelector('.btn_aside2')
+const btn_editor = document.querySelector('.btn_aside1')
 const btn_highlight = document.getElementById('btn_highlight')
 const section_projeto = document.getElementById('projeto_section')
 const codigo_editor = document.querySelector('.codigo_editor')
@@ -18,13 +19,19 @@ btn_comunidade.addEventListener('click', () => {
     flex_desktop[0].classList.add('flex_desktop_comunidade')
 })
 
+btn_editor.addEventListener('click', () => () {
+    btn_highlight.style.display = 'flex';
+    section_projeto.style.display = 'flex';
+    editor_inicial.
+} )
 
 function criarElementoTarefa(info_projeto) {
     info_projeto.forEach(element => {
     const editor_texto = document.createElement('li')
-    editor_texto.classList.add('editor_texto')
+    editor_texto.classList.add('editor_texto_comunidade')
     editor_texto.id = 'editor_texto'
     section_editor.appendChild(editor_texto)
+    section_editor.classList.add('section_editor_comunidade')
     editor_texto.innerHTML = ` <div class="campo_editor">
                         <div class="btn_todos">
                         <img class="btn_editor" src="./img/Ellipse 1.png"></img>
