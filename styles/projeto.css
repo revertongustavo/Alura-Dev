@@ -1,7 +1,7 @@
 .projeto_definido{
     display: flex;
-    justify-content: center;
 }
+
 .div_projetodef{
     background-color: rgba(0, 0, 0, 0.16);
     width: 18.5rem;
@@ -227,7 +227,7 @@
 @media screen and (min-width: 768px) {
 
 .div_projetodef{
-    width: 32rem;
+    width: 30.5rem;
 }
 
 .div_projetoSec{

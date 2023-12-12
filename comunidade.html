@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade AluraDev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header_aluradev">
+        <img src="./img/Logo.svg"  alt="logo AluraDev" class="logo">
+        <input type="text" class="campo_pesquisa" id="campo_pesquisa" placeholder="Busque por algo">
+        <div class="icones_menu">
+            <i class="fa-solid fa-magnifying-glass fa-lg icon_pesquisa" id="icon_pesquisa"></i>
+            <i class="fa-solid fa-bars fa-lg icon_menu" id="icon_menu"></i>
+            <i class="fa-solid fa-xmark fa-lg icon_menu2" id="icon_menu2"></i>
+        </div>
+        <div class="perfil_stages">
+            <div class="perfil_usuario">
+                <img src="./img/Photo.png" alt="foto do usuario" class="photo_perfil">
+                <p class="nome_perfil">Harry</p>
+            </div>
+        </div>
+    </header>
+    <div class="flex_desktop">
+        <aside class="menu_aside" id="menu_aside">
+            <div class="div_aside" id="div_aside">
+                <h2 class="titulo_aside" id="titulo_aside">MENU</h2>
+                <a href="./index.html" class="btn_aside btn_aside1 outlined">
+                    <i class="fa-solid fa-code" style="color: #ffffff;"></i>
+                </a>
+                <label class="lb_btn1">Editor de código</label>
+                <a href="./comunidade.html" class="btn_aside btn_aside2 btn_active_inicial">
+                    <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                </a>
+                <label class="lb_btn2">Comunidade</label>
+                <label class="linha_aside" id="linha_aside">___________________________</label>
+                <div class="perfil_aside" id="perfil_aside">
+                    <img src="./img/Photo.png" alt="foto do usuario" class="foto_aside">
+                    <p class="nome_perfil">Harry</p>
+                </div>
+            </div>
+        </aside>
+        <section class="editor_highlight" id="editor_highlight">
+            <ul class="section_editor" id="section_editor">
+                
+            </ul>
+        </section>
+    </div>
+        <script type="module" src="./comunidade.js"></script>
+</body>
+</html>

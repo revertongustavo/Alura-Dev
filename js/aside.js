@@ -88,10 +88,10 @@ function display_pesquisa(estado){
         icon_pesquisa.style.visibility='visible';
 }
 
-btn_aside1.addEventListener('click', () => {
-    projeto_definido.style.display = 'none';
-})
+// btn_aside1.addEventListener('click', () => {
+//     projeto_definido.style.display = 'none';
+// })
 
-btn_aside2.addEventListener('click', () => {
-    projeto_definido.style.display = 'flex';
-})
+// btn_aside2.addEventListener('click', () => {
+//     projeto_definido.style.display = 'flex';
+// })

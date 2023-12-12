@@ -14,10 +14,3 @@ botao.addEventListener('click', () => {
     aplicaHighlight()
 })
 
-projeto_definido.addEventListener('mouseover', () => {
-    status_perfil.style.display='flex'
-})
-
-projeto_definido.addEventListener('mouseout', () => {
-    status_perfil.style.display='none'
-})

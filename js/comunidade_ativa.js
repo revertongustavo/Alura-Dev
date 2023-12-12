@@ -6,62 +6,56 @@ const codigo_editor = document.querySelector('.codigo_editor')
 const section_editor = document.getElementById('section_editor')
 const section_editorNode = document.querySelector('.section_editor')
 const editor_inicial = document.getElementById('editor_texto')
-const editor_inicial1 = document.querySelector('.editor_texto')
 const projeto_def_inicial = document.getElementById('projeto_definido')
 const projetos_all = document.getElementsByClassName('projeto_definido')
 const flex_desktop =document.getElementsByClassName('flex_desktop')
-const editor_texto_all = document.getElementsByClassName('editor_texto_comunidade')
 let codigos_salvos = localStorage.getItem('codigos_salvos') ? JSON.parse(localStorage.getItem('codigos_salvos')) : [];
+const projeto_definido = document.querySelector('.projeto_definido')
 
-btn_comunidade.addEventListener('click', () => {
-    section_editorNode.innerHTML = ''
-    btn_highlight.style.display = 'none';
-    section_projeto.style.display = 'none';
-    projeto_def_inicial.remove();
-    editor_inicial.remove();
-    flex_desktop[0].classList.add('flex_desktop_comunidade')
+window.onload = function () {
+    // section_editorNode.innerHTML = '';
+    // section_projeto.style.display = 'flex';
+    // projeto_def_inicial.remove();
+    // editor_inicial.remove();
     criarElementoTarefa(codigos_salvos)
-})
+}
 
 btn_editor.addEventListener('click', () => {
     section_editorNode.innerHTML = ''
-    btn_highlight.style.display = 'flex';
-    section_projeto.style.display = 'flex';
-    codigo_editor.textContent = '';
-    listasOff();
+    // codigo_editor.textContent = '';
+    // listasOff();
     resetarCodigos();
 } )
 
-function listasOff(){
-    for (let i = 0; i < editor_texto_all.length; i++)
-        editor_texto_all[i].style.display = 'none';
+// function listasOff(){
+//     for (let i = 0; i < editor_texto_all.length; i++)
+//         editor_texto_all[i].style.display = 'none';
 
-    for (let i = 0; i < projetos_all.length; i++)
-        projetos_all[i].style.display = 'none';
-}
+//     for (let i = 0; i < projetos_all.length; i++)
+//         projetos_all[i].style.display = 'none';
+// }
 
-function resetarCodigos(){
-    const editor_texto = document.createElement('li')
-    editor_texto.classList.add('editor_texto')
-    editor_texto.id = 'editor_texto'
-    section_editor.appendChild(editor_texto)
-    section_editor.classList.add('section_editor')
-    section_editor.classList.remove('section_editor_comunidade')
-    editor_texto.innerHTML = ` <div class="campo_editor">
-                        <div class="btn_todos">
-                        <img class="btn_editor" src="./img/Ellipse 1.png"></img>
-                        <img class="btn_editor" src="./img/Ellipse 2.png"></img>
-                        <img class="btn_editor" src="./img/Ellipse 3.png"></img>
-                    </div>
-                        <div class="codigo-wrapper">
-    <code class="codigo_editor javascript" id= "codigo_editor" contenteditable= "true" aria-label="Editor de código">
-    ${''}
-    </code>         
-</div>   `
-}
+// function resetarCodigos(){
+//     const editor_texto = document.createElement('li')
+//     editor_texto.classList.add('editor_texto')
+//     editor_texto.id = 'editor_texto'
+//     section_editor.appendChild(editor_texto)
+//     section_editor.classList.add('section_editor')
+//     section_editor.classList.remove('section_editor_comunidade')
+//     editor_texto.innerHTML = ` <div class="campo_editor">
+//                         <div class="btn_todos">
+//                         <img class="btn_editor" src="./img/Ellipse 1.png"></img>
+//                         <img class="btn_editor" src="./img/Ellipse 2.png"></img>
+//                         <img class="btn_editor" src="./img/Ellipse 3.png"></img>
+//                     </div>
+//                         <div class="codigo-wrapper">
+//     <code class="codigo_editor javascript" id= "codigo_editor" contenteditable= "true" aria-label="Editor de código">
+//     ${''}
+//     </code>         
+// </div>   `
+// }
 
 function criarElementoTarefa(info_projeto) {
-    console.log(info_projeto)
     info_projeto.forEach(element => {
     const editor_texto = document.createElement('li')
     editor_texto.classList.add('editor_texto_comunidade')
@@ -79,14 +73,13 @@ function criarElementoTarefa(info_projeto) {
     ${element.codigo}
     </code>         
 </div>   `
-
     const projeto_definido = document.createElement('li')
     projeto_definido.classList.add('projeto_definido')
+    projeto_definido.classList.add('projeto_definido')
     projeto_definido.id ='projeto_definido'
-    // projeto_definido.style.display = 'block'
     section_editor.appendChild(projeto_definido)
     projeto_definido.innerHTML = `<div class="div_projetodef">
-    <h1 class="titulo_projeto">${element.nome}</h1>
+    <h1 class="titulo_projeto">${element.nome_projeto}</h1>
     <p class="descricao_projeto">${element.descricao}</p>
     <div class="status_perfil" id="status_perfil">
         <div class="curtidas_icon">
@@ -105,5 +98,15 @@ function criarElementoTarefa(info_projeto) {
         </div>
     </div>
 </div>`
+
 });
 }
+
+
+projeto_definido.addEventListener('mouseover', () => {
+    status_perfil.style.display='flex'
+})
+
+projeto_definido.addEventListener('mouseout', () => {
+    status_perfil.style.display='none'
+})
