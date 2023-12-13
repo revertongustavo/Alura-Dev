@@ -51,10 +51,21 @@ window.onload = function () {
 function criarElementoTarefa(info_projeto) {
     info_projeto.forEach(element => {
     const editor_texto = document.createElement('li')
-    editor_texto.classList.add('editor_texto_comunidade')
+    editor_texto.style.backgroundColor = `${element.cor}`;
     editor_texto.id = 'editor_texto'
     section_editor.appendChild(editor_texto)
-    section_editor.classList.add('section_editor_comunidade')
+    if (window.matchMedia("(max-width: 767px)").matches){
+        editor_texto.classList.remove('editor_texto_comunidade')
+        section_editor.classList.remove('section_editor_comunidade')
+        section_editor.classList.add('section_editor')
+        editor_texto.classList.add('editor_texto')
+    }
+    else{
+        editor_texto.classList.add('editor_texto_comunidade')
+        section_editor.classList.add('section_editor_comunidade')
+    }
+
+    section_editor.appendChild(editor_texto)
     editor_texto.innerHTML = ` <div class="campo_editor">
                         <div class="btn_todos">
                         <img class="btn_editor" src="./img/Ellipse 1.png"></img>
