@@ -10,51 +10,44 @@ const projeto_def_inicial = document.getElementById('projeto_definido')
 const projetos_all = document.getElementsByClassName('projeto_definido')
 const flex_desktop =document.getElementsByClassName('flex_desktop')
 let codigos_salvos = localStorage.getItem('codigos_salvos') ? JSON.parse(localStorage.getItem('codigos_salvos')) : [];
-const projeto_definido = document.querySelector('.projeto_definido')
 
 window.onload = function () {
-    // section_editorNode.innerHTML = '';
-    // section_projeto.style.display = 'flex';
-    // projeto_def_inicial.remove();
-    // editor_inicial.remove();
     criarElementoTarefa(codigos_salvos)
+    const div_projetodef = document.querySelectorAll('.div_projetodef')
+    const check_btn = document.querySelectorAll('#check_btn')
+
+//abrir ou fechar o status_perfil
+    div_projetodef.forEach(element => {
+        element.addEventListener('mouseover', () =>{
+            element.childNodes[5].style.display='flex'
+            })
+        element.addEventListener('mouseout', () =>{
+            element.childNodes[5].style.display='none'
+        })
+        })
+// ativando a curtida
+   check_btn.forEach(check_btn => {
+        check_btn.addEventListener('click', () => {
+            if(check_btn.classList.contains('btn_like'))
+                ativa_like(false)
+            else
+                ativa_like(true)
+        })
+        
+        function ativa_like (estado){
+            if(estado == false){
+                check_btn.classList.remove("btn_like")
+                check_btn.classList.add("btn_like_red")
+            }
+            else{
+                check_btn.classList.remove("btn_like_red")
+                check_btn.classList.add("btn_like")
+            }
+        }
+        
+})
 }
-
-btn_editor.addEventListener('click', () => {
-    section_editorNode.innerHTML = ''
-    // codigo_editor.textContent = '';
-    // listasOff();
-    resetarCodigos();
-} )
-
-// function listasOff(){
-//     for (let i = 0; i < editor_texto_all.length; i++)
-//         editor_texto_all[i].style.display = 'none';
-
-//     for (let i = 0; i < projetos_all.length; i++)
-//         projetos_all[i].style.display = 'none';
-// }
-
-// function resetarCodigos(){
-//     const editor_texto = document.createElement('li')
-//     editor_texto.classList.add('editor_texto')
-//     editor_texto.id = 'editor_texto'
-//     section_editor.appendChild(editor_texto)
-//     section_editor.classList.add('section_editor')
-//     section_editor.classList.remove('section_editor_comunidade')
-//     editor_texto.innerHTML = ` <div class="campo_editor">
-//                         <div class="btn_todos">
-//                         <img class="btn_editor" src="./img/Ellipse 1.png"></img>
-//                         <img class="btn_editor" src="./img/Ellipse 2.png"></img>
-//                         <img class="btn_editor" src="./img/Ellipse 3.png"></img>
-//                     </div>
-//                         <div class="codigo-wrapper">
-//     <code class="codigo_editor javascript" id= "codigo_editor" contenteditable= "true" aria-label="Editor de código">
-//     ${''}
-//     </code>         
-// </div>   `
-// }
-
+//renderizacao comunidade
 function criarElementoTarefa(info_projeto) {
     info_projeto.forEach(element => {
     const editor_texto = document.createElement('li')
@@ -102,11 +95,3 @@ function criarElementoTarefa(info_projeto) {
 });
 }
 
-
-projeto_definido.addEventListener('mouseover', () => {
-    status_perfil.style.display='flex'
-})
-
-projeto_definido.addEventListener('mouseout', () => {
-    status_perfil.style.display='none'
-})
